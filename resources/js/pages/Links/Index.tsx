@@ -71,7 +71,7 @@ export default function Index({ links, q, base }) {
                             <td className='long-url-cell'>{l.long_url}</td>
                             <td>{l.clicks}</td>
                             <td>
-                                <button type="button" onClick={remove(l.id)}>Delete</button>
+                                <button type="button" onClick={()=>remove(l.id)}>Delete</button>
                             </td>
                         </tr>
                     ))}
